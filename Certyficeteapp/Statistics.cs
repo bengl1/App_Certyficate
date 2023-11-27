@@ -21,15 +21,15 @@
                 switch (this.Average)
                 {
                     case var average when average >= 80:
-                        return "*";
+                        return "* * * * *";
                     case var average when average >= 60:
-                        return "* *";
+                        return "* * * *";
                     case var average when average >= 40:
                         return "* * *";
                     case var average when average >= 20:
-                        return "* * * *";
+                        return "* *";
                     default:
-                        return "* * * * *";
+                        return "*";
                 }
             }
         }

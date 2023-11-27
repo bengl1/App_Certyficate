@@ -1,6 +1,4 @@
-﻿using System;
-
-Console.WriteLine("######################################################");
+﻿Console.WriteLine("######################################################");
 Console.WriteLine();
 Console.WriteLine(" Witam w programie w którym wyznaczę oceny hotelu.");
 Console.WriteLine();
@@ -11,8 +9,7 @@ var choice = Console.ReadLine();
 
 if (choice == "n")
 {
-    var hotel = new Hotel_InMemory("Novotel", "Kraków");
-    hotel.GradeAdded += HotelGradeAdded;
+    var hotel = new HotelInMemory("Novotel", "Kraków");
 
     void HotelGradeAdded(object sender, EventArgs args)
     {
@@ -47,9 +44,8 @@ if (choice == "n")
 }
 else
 {
-    var hotel = new Hotel_InFile("Novotel", "Kraków");
-    hotel.GradeAdded += HotelGradeAdded;
-
+    var hotel = new HotelInFile("Novotel", "Kraków");
+    
     void HotelGradeAdded(object sender, EventArgs args)
     {
         Console.WriteLine("Dodano nową ocenę.");
@@ -75,6 +71,7 @@ else
         }
 
     }
+    hotel.GradeAdded += HotelGradeAdded;
     var statistics = hotel.GetStatistics();
     Console.WriteLine($"Hotel:{hotel.Name} w miejscowości {hotel.Town} otrzymał oceny:");
     Console.WriteLine($"average: {statistics.Average}");
