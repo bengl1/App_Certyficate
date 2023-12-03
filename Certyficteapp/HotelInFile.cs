@@ -30,7 +30,6 @@ public class HotelInFile : HotelBase
             }
         }
 
-
         public override Statistics GetStatistics()
         {
             var gradesFromFile = this.ReadGradesFromFile();
@@ -53,11 +52,8 @@ public class HotelInFile : HotelBase
                     }
                 }
             }
-
             return grades;
         }
-
-
 
         private Statistics CountStatistics(List<float> grades)
         {
@@ -67,9 +63,6 @@ public class HotelInFile : HotelBase
             {
                 statistics.AddGrade(grade);
             }
-
             return statistics;
-
         }
-    
 }

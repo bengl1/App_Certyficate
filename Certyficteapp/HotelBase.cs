@@ -7,7 +7,6 @@
 
             public abstract event GradeAddedDelegate GradeAdded;
 
-
             public HotelBase(string name, string town)
 
             {
@@ -27,8 +26,6 @@
             float gradeAsFloat = (float)grade;
             this.AddGrade(gradeAsFloat);
         }
-
-
 
         public void AddGrade(char grade)
         {
@@ -52,18 +49,14 @@
                         break;
                     default:
                         throw new Exception("Wrong Letter");
-
                 }
         }
-
 
         public void AddGrade(int grade)
         {
             float gradeAsFloat = (float)grade;
             this.AddGrade(gradeAsFloat);
         }
-
-
 
         public  void AddGrade(string grade)
         {
@@ -82,15 +75,6 @@
                  }
         }
 
-
         public abstract Statistics GetStatistics();
-
-            public void metoda()
-        {
-
-        }
-
-        
     }
-
 }

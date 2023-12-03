@@ -2,8 +2,6 @@
 
    public class HotelInMemory : HotelBase
     {
-
-
         private List<float> grades = new List<float>();
 
         public HotelInMemory(string name, string town)
@@ -29,7 +27,6 @@
             }
         }
 
-
         public override Statistics GetStatistics()
         {
             var statistics = new Statistics();
@@ -38,7 +35,6 @@
             {
                 statistics.AddGrade(grade);
             }
-
             return statistics;
         }
     }

@@ -1,0 +1,11 @@
+﻿Build started...
+1>------ Build started: Project: Certyficeteapp, Configuration: Debug Any CPU ------
+1>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+1>Certyficeteapp -> C:\Projekty_kurs\App_Certyficate\Certyficteapp\bin\Debug\net7.0\Certyficeteapp.dll
+2>------ Build started: Project: Certyficateapp.Test, Configuration: Debug Any CPU ------
+2>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2128,5): warning : The referenced project '..\Certyficeteapp\Certyficeteapp.csproj' does not exist.
+2>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+2>Certyficateapp.Test -> C:\Projekty_kurs\App_Certyficate\Certyficateapp.Test\bin\Debug\net7.0\Certyficateapp.Test.dll
+2>Done building project "Certyficateapp.Test.csproj".
+========== Build: 2 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build started at 15:57 and took 07,037 seconds ==========

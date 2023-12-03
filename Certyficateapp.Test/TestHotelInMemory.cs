@@ -5,7 +5,7 @@ namespace Certyficateapp.Test
 
 
         [Test]
-        public void HotelRating()
+        public void HotelRatingTest()
         {
             var hotel = new HotelInMemory("Novotel", "Kraków");
             hotel.AddGrade(20);

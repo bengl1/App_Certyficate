@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Certyficeteapp\Certyficeteapp.csproj" />
+    <ProjectReference Include="..\Certyficteapp\Certyficeteapp.csproj" />
   </ItemGroup>
 
 </Project>
