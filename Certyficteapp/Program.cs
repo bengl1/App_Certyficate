@@ -14,38 +14,27 @@ var choice = Console.ReadLine();
 switch(choice)
 {
     case "1":
-        RatingInMemory();
+        var hotelInMemory = new HotelInMemory("Novotel", "Kraków");
+        AddRating(hotelInMemory);
         break;
 
 
     case "2":
-        RatingInFile();
+        var hotelInFile = new HotelInFile("Novotel", "Kraków");
+        AddRating(hotelInFile);
         break;
 }
 
-static void RatingInMemory()
-    { 
-    var hotel = new HotelInMemory("Novotel", "Kraków");
+static void AddRating(IHotel hotel)
+ { 
     hotel.GradeAdded += HotelGradeAdded;
     EnterGrade(hotel);
-    ShowStatistics(hotel);
+    ShowStatistics(hotel); 
+ }
 
-    static void HotelGradeAdded(object sender, EventArgs args)
-    {
-        Console.WriteLine("Dodano nową ocenę.");
-    }
-}
-static void RatingInFile()
+static void HotelGradeAdded(object sender, EventArgs args)
 {
-    var hotel = new HotelInFile("Novotel", "Kraków");
-    hotel.GradeAdded += HotelGradeAdded;
-    EnterGrade(hotel);
-    ShowStatistics(hotel);
-
-    void HotelGradeAdded(object sender, EventArgs args)
-    {
-        Console.WriteLine("Dodano nową ocenę.");
-    }  
+    Console.WriteLine("Dodano nową ocenę.");
 }
 static void EnterGrade(IHotel hotel)
 {
